@@ -2,7 +2,8 @@ import { readAsText } from './reader';
 import parse from './parser';
 import './style.css';
 
-const regSkillSuccess = /^进行(\S+)检定.*?成功$/;
+const regSkillSuccess =
+  /^进行([^(力量)(教育)(灵感)(智力)(体质)(幸运)(敏捷)(意志)(外貌)\s]+)检定.*?成功$/;
 
 function createPlayerElement(name: string, skills: string[]) {
   const nameElement = document.createElement('div');
