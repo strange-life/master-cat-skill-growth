@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "gh-pages": "tsc && vite build --base /master-cat-skill-growth/ --outDir docs",
     "serve": "vite preview"
   },
   "devDependencies": {
